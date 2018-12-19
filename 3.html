@@ -1,47 +1,84 @@
-
 <!doctype html>
-<head>
-<title>WEB1 - html</title>
-<meta charset="utf-8">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130113719-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <head>
+    <title>전지적 독자시점</title>
+    <meta charset="utf-8">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130113719-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'UA-130113719-1');
-</script>
-<style>
-  a {
-    color:#8A0808;
-    text-decoration: none;
-  }
-  h2 {
-    text-align:center;
-  }
-  #active {
-    color:#8A0808;
-  }
-  .saw {
-    color:#DF013A;
-  }
-</style>
-</head>
-<body>
-  <<h1><a href="index.html">목차</a></h1>
-<ol>
-  <li><a href="1.html" target="_blank" class="saw" title="김독자/WHITE"> 시계 / Kim Dokja</a></li>
-  <li><a href="2.html" target="_blank" class="saw" title="유중혁/BLACK"> 인내 / Yu Junghyeok</a></li>
-  <li><a href="3.html" target="_blank" class="saw" id="active" title="한수영/RED"> 담배 / Han Suyeong</a></li>
-  <li><a href="4.html" target="_blank" class="saw" title="???/REBIRTH"> ??? / The Disaster of Flooding</a></li>
-</ol>
-<h2>담배</h2>
-<p><img src="coding_3.jpg" width="50%"></p>
-<p><i>황혼</i>이 저무는 시기. 드디어 해가 저물고 밤하늘이 장막 처럼 온 하늘을 뒤덮일 때. 건물 옥상은 오로지 그의 몫이며 영역이었다. 찬기가 올라오기 시작한 벽에 기대기도 하고, 아니면 바람을 찾아 옥상 난간에 몸을 맡기기도 했다. 오늘도 어김없이 피어오르는 담배 연기. 바람에 따라 힘없이 흩날리고 있다. 수영은 연기의 행적을 눈으로 좇았다.</p>
-<p>탁한 고동빛 시선에 빛이 타오르자, 백지같았던 얼굴은 미간부터 시작해서 사정없이 구겨지고 만다.</p>
-<p style="margin-top:2px;">"씨발, 환장하겠네."</p>
-<p>다 태우지도 못한 담배를 땅바닥에 던지고 가차없이 발로 비볐다. <i>떠오르는 얼굴 <a href="1.html" style="color:#848484" target="_blank" title="김독자 개자식">하나</a>, <a href="2.html" style="color:#151515" target="_blank" title="너도 마찬가지야">둘</a>, <a href="5.html" style="color:#08088A" target="_blank" title="... ... ... .">셋</a></i> 발밑에 떠오르기 시작한 기억 위로 다시 한 번 신발 밑창이 찾아든다. 발을 치우자 <strong>형체를 알아볼 수 없을 무언가</strong>가 모습을 드러냈다. 그는 그것조차도 마음에 들어하지 못하였다.</p>
-<p>수영은 미련없이 등을 돌렸다. 옥상문이 거칠게 닫힌다.</p>
-</body>
+      gtag('config', 'UA-130113719-1');
+    </script>
+    <style>
+      body{
+        margin:0;
+      }
+      a {
+        color:red;
+        text-decoration: none;
+      }
+      h1 {
+        font-size:45px;
+        text-align: center;
+        border-bottom:1px solid gray;
+        margin:0;
+        padding:20px;
+      }
+      ol{
+        border-right:1px solid gray;
+        width:100px;
+        margin:0;
+        padding:20px;
+      }
+      #grid{
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
+      #grid ol{
+        padding-left:33px;
+      }
+      #grid #article{
+        padding-left:25px;
+      }
+      #active {
+      color:red;
+      }
+      .saw {
+      color:#D8D8D8;
+      }
+      @media(max-width:500px){
+        #grid{
+          display: block;
+        }
+      ol{
+        border-right:none;
+      }
+      h1 {
+        border-bottom:none;
+      }
+      }
+    </style>
+  </head>
+  <body>
+      <h1><a href="index.html">흑염마황</a></h1>
+  <div id="grid">
+  <ol>
+    <li><a href="1.html" target="_blank" class="saw" title="김독자/WHITE"> 시계 <br>/ Kim Dokja</br></a></li>
+    <li><a href="2.html" target="_blank" class="saw" title="유중혁/BLACK"> 인내 <br>/ Yu Junghyeok</br></a></li>
+    <li><a href="3.html" target="_blank" class="saw" id="active" title="한수영/RED"> 담배<br> / Han Suyeong</br></a></li>
+    <li><a href="4.html" target="_blank" class="saw" title="???/REBIRTH"> ??? <br>/ The Disaster of Flooding</br></a></li>
+  </ol>
+    <div id="article">
+    <h2>담배</h2>
+    <p><img src="coding_3.jpg" width="70%"></p>
+    <p><i>황혼</i>이 저무는 시기. 드디어 해가 저물고 밤하늘이 장막 처럼 온 하늘을 뒤덮일 때. 건물 옥상은 오로지 그의 몫이며 영역이었다. 찬기가 올라오기 시작한 벽에 기대기도 하고, 아니면 바람을 찾아 옥상 난간에 몸을 맡기기도 했다. 오늘도 어김없이 피어오르는 담배 연기. 바람에 따라 힘없이 흩날리고 있다. 수영은 연기의 행적을 눈으로 좇았다.</p>
+    <p>탁한 고동빛 시선에 빛이 타오르자, 백지같았던 얼굴은 미간부터 시작해서 사정없이 구겨지고 만다.</p>
+    <p style="margin-top:2px;">"씨발, 환장하겠네."</p>
+    <p>다 태우지도 못한 담배를 땅바닥에 던지고 가차없이 발로 비볐다. <i>떠오르는 얼굴 <a href="1.html" style="color:#848484" target="_blank" title="김독자 개자식">하나</a>, <a href="2.html" style="color:#151515" target="_blank" title="너도 마찬가지야">둘</a>, <a href="5.html" style="color:#08088A" target="_blank" title="... ... ... .">셋</a></i> 발밑에 떠오르기 시작한 기억 위로 다시 한 번 신발 밑창이 찾아든다. 발을 치우자 <strong>형체를 알아볼 수 없을 무언가</strong>가 모습을 드러냈다. 그는 그것조차도 마음에 들어하지 못하였다.</p>
+    <p>수영은 미련없이 등을 돌렸다. 옥상문이 거칠게 닫힌다.</p>
+  </div>
+  </div>
+  </body>
 </html>

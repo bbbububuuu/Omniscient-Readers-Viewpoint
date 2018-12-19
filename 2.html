@@ -1,46 +1,83 @@
-
 <!doctype html>
 <head>
-<title>WEB1 - html</title>
-<meta charset="utf-8">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130113719-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <title>전지적 독자시점</title>
+  <meta charset="utf-8">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130113719-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'UA-130113719-1');
-</script>
-<style>
-  a {
-    color:#151515;
-    text-decoration: none;
-  }
-  h2 {
-    text-align:center;
-  }
-  #active {
-    color:#151515;
-  }
+    gtag('config', 'UA-130113 719-1');
+  </script>
+  <style>
+    body{
+      margin:0;
+    }
+    a {
+      color:black;
+      text-decoration: none;
+    }
+    h1 {
+      font-size:45px;
+      text-align: center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding:20px;
+    }
+    ol{
+      border-right:1px solid gray;
+      width:100px;
+      margin:0;
+      padding:20px;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #grid ol{
+      padding-left:33px;
+    }
+    #grid #article{
+      padding-left:25px;
+    }
+    #active {
+    color:Black;
+    }
   .saw {
-    color:#DF013A;
+    color:#D8D8D8;
   }
-</style>
+    @media(max-width:500px){
+      #grid{
+        display: block;
+      }
+    ol{
+      border-right:none;
+    }
+    h1 {
+      border-bottom:none;
+    }
+  }
+  </style>
 </head>
 <body>
-  <h1><a href="index.html">목차</a></h1>
+  <h1><a href="index.html">패왕</a></h1>
+  <div id="grid">
 <ol>
-  <li><a href="1.html" target="_blank" class="saw" title="김독자/WHITE"> 시계 / Kim Dokja</a></li>
-  <li><a href="2.html" target="_blank" class="saw" id="active" title="유중혁/BLACK"> 인내 / Yu Junghyeok</a></li>
-  <li><a href="3.html" target="_blank" class="saw" title="한수영/RED"> 담배 / Han Suyeong</a></li>
-  <li><a href="4.html" target="_blank" class="saw" title="???/REBIRTH"> ??? / The Disaster of Flooding</a></li>
+  <li><a href="1.html" target="_blank" class="saw" title="김독자/WHITE"> 시계 <br>/ Kim Dokja</br></a></li>
+  <li><a href="2.html" target="_blank" class="saw" id="active" title="유중혁/BLACK"> 인내 <br>/ Yu Junghyeok</br></a></li>
+  <li><a href="3.html" target="_blank" class="saw" title="한수영/RED"> 담배<br> / Han Suyeong</br></a></li>
+  <li><a href="4.html" target="_blank" class="saw" title="???/REBIRTH"> ??? <br>/ The Disaster of Flooding</br></a></li>
 </ol>
-<h2>인내</h2>
-<p><img src="coding_1.jpg" width="35%"></p>
-<p><i>유료화 이후</i>로, 유중혁은 현실과 바램이 일치하지 않은 채로 인생길을 걸어왔다. 분노로 일그러진 얼굴 아래로 시계를 쥔 손등에는 힘줄을 도드라졌으나, <strong>시계</strong>는 그저 그의 손 안에서 제 형태를 유지하고 있을 뿐이었다.</p>
-<p>소중히 다루겠다고 다뤄질 물건이었으면, 그는 결코 상실의 아픔을 맛보지 않았으리라. 떨어트리고, 잃어버리고, 수차례 회중시계의 뚜껑을 열기를 반복한 끝에 형태는 마모되었고, 시침은 엇나간 채로 흘러가고만 있었다. 수리를 고민한 것도 잠시, 건들면 다시 돌아오지 못할 것을 사내는 염려하였다. 유예를 주고, 기다릴 것을 선택한 것이다.</p>
-<p><i>후회하는가.</i> 대답없는 질문이 메아리가 되어 되돌아온다. 시간을 조정할 수 있으나, 맞추지 못하였다. 망가지기 직전의 물건은 습관처럼 징후를 남긴다고 하지. 이것이 마지막이 되지 않기를.</p>
-<p style="magine-top:2px;">유중혁은 회중시계 뚜껑을 닫고 그것을 시야에 치우자, 바로 아래 <i>넝마가 된 사내가 있었음</i>을 깨닫게 된다. 익숙한 코트를 입고서, 코트를 제외한 모든 것이 만신창이가 된 사내- <a href="1.html" style="color:#848484" target="_blank" title="김독자, 김독자, 김독자. 유중혁은 무심코 그의 이름을 연이어 불러댔다.">기다림의 끝</a>이 그곳에 있었다.</p>
+  <div id="article">
+  <h2>인내</h2>
+    <p><img src="coding_1.jpg" width="70%"></p>
+    <p><i>유료화 이후</i>로, 유중혁은 현실과 바램이 일치하지 않은 채로 인생길을 걸어왔다. 분노로 일그러진 얼굴 아래로 시계를 쥔 손등에는 힘줄을 도드라졌으나, <strong>시계</strong>는 그저 그의 손 안에서 제 형태를 유지하고 있을 뿐이었다.</p>
+    <p>소중히 다루겠다고 다뤄질 물건이었으면, 그는 결코 상실의 아픔을 맛보지 않았으리라. 떨어트리고, 잃어버리고, 수차례 회중시계의 뚜껑을 열기를 반복한 끝에 형태는 마모되었고, 시침은 엇나간 채로 흘러가고만 있었다. 수리를 고민한 것도 잠시, 건들면 다시 돌아오지 못할 것을 사내는 염려하였다. 유예를 주고, 기다릴 것을 선택한 것이다.</p>
+    <p><i>후회하는가.</i> 대답없는 질문이 메아리가 되어 되돌아온다. 시간을 조정할 수 있으나, 맞추지 못하였다. 망가지기 직전의 물건은 습관처럼 징후를 남긴다고 하지. 이것이 마지막이 되지 않기를.</p>
+    <p style="magine-top:2px;">유중혁은 회중시계 뚜껑을 닫고 그것을 시야에 치우자, 바로 아래 <i>넝마가 된 사내가 있었음</i>을 깨닫게 된다. 익숙한 코트를 입고서, 코트를 제외한 모든 것이 만신창이가 된 사내- <a href="1.html" style="color:#848484" target="_blank" title="김독자, 김독자, 김독자. 유중혁은 무심코 그의 이름을 연이어 불러댔다.">기다림의 끝</a>이 그곳에 있었다.</p>
+  </div>
+  </div>
 </body>
 </html>

@@ -1,41 +1,81 @@
-
 <!doctype html>
-<head>
-<title>WEB1 - html</title>
-<meta charset="utf-8">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130113719-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <head>
+    <title>전지적 독자시점</title>
+    <meta charset="utf-8">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130113719-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'UA-130113719-1');
-</script>
-<style>
-  a {
-    color:#08088A;
-    text-decoration: none;
-  }
-  #active {
-    color:#08088A;
-  }
-  .saw {
-    color:black;
-  }
-</style>
-</head>
-<body>
-  <<h1><a href="index.html">의■의흐름</a></h1>
-<ol>
-  <li><a href="1.html" target="_blank" class="saw" title="김독자/WHITE"> ■가 할게, ■영아</a></li>
-  <li><a href="2.html" target="_blank" class="saw" title="유중혁/BLACK"> 독■ 씨는 정말 좋은 말■을</a></li>
-  <li><a href="3.html" target="_blank" class="saw" title="한수영/RED"> 상■의 삶이 있는</a></li>
-  <li><a href="4.html" target="_blank" class="saw" title="비유/REBIRTH"> ■■ 날이 없었어요</a></li>
-  <li><a href="5.html" target="_blank" class="saw" id="active" title="유상아/LABYRINTH"> 그래도 ■가 할게</a></li>
-</ol>
-<h2>부서진 설화가 쉴새없이 쏟아져내리며</h2>
-<p><img src="coding_5.jpg" width="50%"></p>
-<p><strong><i>"타인을 위해 자신을 숨겨왔던, ■■■"</strong></i></p>
-</body>
+      gtag('config', 'UA-130113719-1');
+    </script>
+    <style>
+      body{
+        margin:0;
+      }
+      a {
+        color:#08088A;
+        text-decoration: none;
+      }
+      h1 {
+        font-size:45px;
+        text-align: center;
+        border-bottom:1px solid gray;
+        margin:0;
+        padding:20px;
+      }
+      ol{
+        border-right:1px solid gray;
+        width:100px;
+        margin:0;
+        padding:20px;
+      }
+      #grid{
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
+      #grid ol{
+        padding-left:33px;
+      }
+      #grid #article{
+        padding-left:25px;
+      }
+      #active {
+      color:#08088A;
+      }
+      .saw {
+      color:#D8D8D8;
+      }
+      @media(max-width:500px){
+        #grid{
+          display: block;
+        }
+      ol{
+        border-right:none;
+      }
+      h1 {
+        border-bottom:none;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <h1><a href="index.html">의■의흐름</a></h1>
+    <div id="grid">
+    <ol>
+      <li><a href="1.html" target="_blank" class="saw" title="김독자/WHITE"> ■가 할게, <br>■영아</br></a></li>
+      <li><a href="2.html" target="_blank" class="saw" title="유중혁/BLACK"> 독■씨는 정말 <br>좋은, 말■ 을</br></a></li>
+      <li><a href="3.html" target="_blank" class="saw" title="한수영/RED"> 상■의, <br>삶이 있는</br></a></li>
+      <li><a href="4.html" target="_blank" class="saw" title="비유/REBIRTH"> ■■ 날이, <br>없었어 요</br></a></li>
+      <li><a href="5.html" target="_blank" class="saw" id="active" title="유상아/LABYRINTH"> 그 래도, <br>■가 할게</br></a></li>
+    </ol>
+    <div id="article">
+    <h2>부서진 설화가 쉴새없이 쏟아져내리며</h2>
+      <p><img src="coding_5.jpg" width="90%"></p>
+      <p><strong><i>"타인을 위해 자신을 숨겨왔던, ■■■"</strong></i></p>
+    </div>
+    </div>
+  </body>
 </html>
